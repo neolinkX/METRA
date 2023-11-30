@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script language="JavaScript">
+
+alert("Se conectara");
+
+</script>
+
+<SCRIPT LANGUAGE="VBScript"> 
+CONST CLSID_SDK = "{68ABACA1-017C-4738-AAB4-03B13DC751F7}"
+CONST CLSID_ACTIVEX = "{677BE4C6-BFE1-4C2C-88DE-7108BE8C2EB7}"
+CONST FILE_NOT_FOUND = "file not found"
+
+Dim WshShell, fso, SDKFile, SDKVersion, ActiveXFile, ActiveXVersion, retval
+Dim SDKObject, ActiveXObject, bSDKObjectCreated, bActiveXObjectCreated
+
+SDKFile = FILE_NOT_FOUND
+SDKVersion = FILE_NOT_FOUND
+ActiveXFile = FILE_NOT_FOUND
+ActiveXVersion = FILE_NOT_FOUND
+bSDKObjectCreated = FILE_NOT_FOUND
+bActiveXObjectCreated = FILE_NOT_FOUND
+retval = ""
+
+On Error Resume Next
+
+Set WshShell = WScript.CreateObject("WScript.Shell")
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+SDKFile = WshShell.RegRead("HKCR\CLSID\" & CLSID_SDK & "\InprocServer32\")
+
+if SDKFile = FILE_NOT_FOUND THEN SDKFile = WshShell.RegRead("HKCR\Wow6432Node\CLSID\" & CLSID_SDK & "\InprocServer32\")
+
+if SDKFile = FILE_NOT_FOUND Then
+	WshShell.Popup "Registry key not found for Connectivity SDK", , Wscript.ScriptName, 16
+Else
+
+	if fso.FileExists(SDKFile) Then
+		SDKVersion = fso.GetFileVersion(SDKFile)
+		
+		Set SDKObject = CreateObject("WelchAllyn.WAConnectivityATL")
+
+		If SDKObject is Nothing Then
+			WshShell.Popup "Could not create the SDK object: " + Err.description, , Wscript.ScriptName, 16
+			bSDKObjectCreated = "false"
+		Else
+			bSDKObjectCreated = "true"
+			Set SDKObject = Nothing
+		End If
+		
+		SDKFile = """" & SDKFile & """"
+	Else
+		WshShell.Popup "Connectivity SDK file not found", , Wscript.ScriptName, 16
+
+	End If
+End If
+
+retval = retval & vbCrLf & "SDK File Name: " & SDKFile
+retval = retval & vbCrLf & "SDK File Version: " & SDKVersion
+retval = retval & vbCrLf & "SDK Object Created: " & bSDKObjectCreated
+
+ActiveXFile = WshShell.RegRead("HKCR\CLSID\" & CLSID_ACTIVEX & "\InprocServer32\")
+
+if ActiveXFile = FILE_NOT_FOUND Then ActiveXFile = WshShell.RegRead("HKCR\Wow6432Node\CLSID\" & CLSID_ACTIVEX & "\InprocServer32\")
+
+if ActiveXFile = FILE_NOT_FOUND Then
+	WshShell.Popup "Registry key not found for Vitals ActiveX", , Wscript.ScriptName, 16
+Else
+	if fso.FileExists(ActiveXFile) Then
+		ActiveXVersion = fso.GetFileVersion(ActiveXFile)
+
+		Set ActiveXObject = CreateObject("WelchAllyn.Vitals2")
+
+		If ActiveXObject is Nothing Then
+			WshShell.Popup "Could not create the ActiveX object: " + Err.description, , Wscript.ScriptName, 16
+			bActiveXObjectCreated = "false"
+		Else
+			bActiveXObjectCreated = "true"
+			Set ActiveXObject = Nothing
+		End If
+
+		ActiveXFile = """" & ActiveXFile & """"
+	Else
+		WshShell.Popup "Vitals ActiveX file not found", , Wscript.ScriptName, 16
+	End If
+End If
+
+retval = retval & vbCrLf & "ActiveX File Name: " & ActiveXFile
+retval = retval & vbCrLf & "ActiveX File Version: " & ActiveXVersion
+retval = retval & vbCrLf & "ActiveX Object Created: " & bActiveXObjectCreated
+
+WshShell.Popup retval, , Wscript.ScriptName
+
+alert("termino");
+</ SCRIPT>
+
+
+</head>
+<body>
+
+	
+	<div>
+		<object id="sv" classid="clsid:61269B4E-9C94-4737-972E-C2D592E62D2E"
+			codebase="/medprev/activex/ActiveX/wavitals2.dll" width=1 height=1
+			align=center hspace=0 vspace=0> </object>
+	
+	</div>
+					
+</body>
+</html>
+
+medareg

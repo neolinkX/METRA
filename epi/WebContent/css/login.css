@@ -1,0 +1,80 @@
+.md-form .prefix~input,
+.md-form .prefix~textarea {
+  margin-left: 0rem;
+}
+.md-form .prefix~input,
+.md-form .prefix~textarea {
+  width: 100% !important;
+}
+.md-form label {
+    color: #FFFFFF;
+}
+.md-form .prefix~label {
+margin-left: 1rem;
+}
+.md-form label {
+  top: .5rem;
+}
+
+
+input[type=search-md]:focus:not([readonly]){
+
+  border-bottom: 1px solid #FFF;
+  -webkit-box-shadow: 0 1px 0 0 #FFF;
+  box-shadow: 0 1px 0 0 #FFF;
+
+}
+input[type=password]:focus:not([readonly])+label{
+  color: #FFF;
+}
+
+.flex-center {
+    color: #fff;
+}
+
+.carousel-caption {
+    height: 100%;
+    padding-top: 20%;
+    position:absolute;
+}
+
+
+body {
+  margin:0px;
+  padding:0px;
+}
+.videoContainer
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+.videoContainer video
+{
+    min-width: 100%;
+    min-height: 100%;
+}
+.card-wrapper .avatar {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 30px auto 0px;
+    overflow: hidden;
+}
+.carousel-caption {
+    color: #FFF;
+}
+.card-wrapper .face
+{
+  background-color: rgba(255, 255, 255, 0)!important; */
+}
+.card-wrapper .front{
+  box-shadow: none;
+}
+.relogin a{
+  color:#FFF;
+  font-size:1.5em;
+}

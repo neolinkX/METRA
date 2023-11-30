@@ -1,0 +1,57 @@
+$("#frm_odontograma").validate({
+  rules:{
+    cCaracter_133:"required",
+    cCaracter_134:"required",
+    cCaracter_135:"required",
+    cCaracter_136:"required",
+    cCaracter_137:"required",
+    cCaracter_138:"required",
+    cCaracter_139:"required",
+    cCaracter_140:"required",
+    cCaracter_142:"required",
+    cCaracter_143:"required",
+    cCaracter_144:"required",
+    cCaracter_145:"required",
+    cCaracter_146:"required",
+    cCaracter_18:"required",
+    cCaracter_17:"required",
+    cCaracter_16:"required",
+    cCaracter_15:"required",
+    cCaracter_14:"required",
+    cCaracter_13:"required",
+    cCaracter_12:"required",
+    cCaracter_11:"required",
+    cCaracter_124:"required",
+    cCaracter_123:"required",
+    cCaracter_122:"required",
+    cCaracter_121:"required",
+    cCaracter_120:"required",
+    cCaracter_119:"required",
+    cCaracter_118:"required",
+    cCaracter_117:"required",
+    cCaracter_19:"required",
+    cCaracter_110:"required",
+    cCaracter_111:"required",
+    cCaracter_112:"required",
+    cCaracter_113:"required",
+    cCaracter_114:"required",
+    cCaracter_115:"required",
+    cCaracter_116:"required",
+    cCaracter_125:"required",
+    cCaracter_126:"required",
+    cCaracter_127:"required",
+    cCaracter_128:"required",
+    cCaracter_129:"required",
+    cCaracter_130:"required",
+    cCaracter_131:"required",
+    cCaracter_132:"required"
+  },
+  invalidHandler:function(e,r){
+    var i=$("#m_form_1_msg");
+    i.removeClass("m--hide").show(),
+    mApp.scrollTo(i,-200);
+  },
+  submitHandler: function(form) {
+    guarda_odontologia();
+  }
+});

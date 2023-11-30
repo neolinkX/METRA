@@ -1,0 +1,298 @@
+/*
+Design by templaterium
+Released for free under a Creative Commons Attribution 3.0 License
+*/
+
+/* ----------------------------------------------
+   HTML ELEMENTS
+------------------------------------------------- */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em; 
+	background: #fff url(http://gbites.tk/archivos/abstract-blue.jpg)repeat-y;
+}
+
+a, a:link, a:visited { color: #0eb4fa; text-decoration: underline; }
+a:hover { color: #CC3399; text-decoration: none; }
+
+p { margin: 0px; padding: 0; }
+img { border: none; }
+
+ul { margin: 0; padding: 0; }
+ul li { margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { color: #000; }
+h1 { font-size: 40px; font-weight: normal; margin: 0 0 20px 0; padding: 5px 0; }
+h2 { font-size: 28px; font-weight: normal; margin: 0 0 20px 0; padding: 10px 0 15px 0; }
+h3 { font-size: 22px; font-weight: normal; margin: 0 0 15px 0; padding: 0; padding: 0 0 10px 0; }
+h4 { font-size: 18px; margin: 0 0 20px 0; padding: 0 0 10px 0; }
+h5 { font-size: 16px; margin: 0 0 10px 0; padding: 0; }
+h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.hr_divider { background: url(template-hr-divider.jpg) bottom repeat-x; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.image_wrapper { display: inline-block; padding: 6px; border: 1px solid #333; background: #fff; margin-bottom: 10px; }
+.image_fl { float: left; margin: 3px 15px 0 0; }
+.image_fr { float: right; margin: 3px 0 0 15px; }
+
+blockquote { font-style: italic; margin-left: 10px;}
+cite { font-weight: bold; color:#333; }
+cite span { color: #7b949f; }
+em { color: #0d99d3; }
+
+#template_body_top { width: 100%; background: url(body-top.jpg) top repeat-x; }
+#template_body_bottom { width: 100%; background: url(body-bottom.jpg) bottom repeat-x; }
+
+#template_wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#template_header {
+	height: 100px;
+	text-align: center;
+}
+
+#site_title {
+	padding-top: 30px;
+}
+
+#site_title h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#site_title a {
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#site_title a strong {
+	color: #fff;
+}
+
+#site_title a span {
+	display: block;
+	font-size: 16px;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+/* menu */
+
+#template_menu {
+	clear: both;
+	width: 750px;
+	height: 35px;
+	padding: 0 20px;
+        margin: 0 auto;
+  -webkit-border-radius: 13px 13px 13px 13px; 
+  -moz-border-radius: 13px 13px 13px 13px;
+  border-radius: 13px 13px 13px 13px;
+  border: solid 1px #5882FA;
+  background: #E6E6E6;
+}
+
+#template_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#template_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+#template_menu ul li a {
+	float: left;
+	display: block;
+	font-size: 14px;
+	width: 110px;
+	height: 35px;
+	padding: 10px 0 0 0;
+	color: #666;	
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	outline: none;
+}
+
+#template_menu ul li a:hover, #template_menu ul .current {
+	color: #492545;
+	background: url(template-menu-hover.jpg) repeat-x;
+}
+
+/* end of menu */
+
+#template_main_wrapper_01 {
+	background: url(template-content-top.png) no-repeat top;
+}
+
+#template_main_wrapper_02 {
+	padding-bottom: 30px;
+	background: url(template-content-bottom.png) no-repeat bottom;
+}
+
+#template_main_wrapper_03 {
+	width: 940px;
+	margin: 0 10px;
+	background: #FF4000 transparent;
+}
+
+#template_main {
+	clear: both;
+	width: 900px;
+	padding: 20px 10px;
+}
+
+#template_main p {
+	margin-bottom: 10px;
+}
+
+#template_slider {
+	width: 860px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 5px solid #e6d8e0;
+box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  border: 1px solid #eee;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  padding: 0 4px 1px 4px;
+}
+
+.col_w420 { 
+	float: left;
+	width: 620px;
+	padding-right: 5px;
+	border-right: 1px solid #ccc;
+box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  border: 1px solid #eee;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  padding: 0 4px 1px 4px;
+}
+
+.col_w420r {
+	float: right;
+	width: 200px;
+box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  border: 1px solid #eee;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  padding: 0 4px 1px 4px;
+}
+
+#template_footer {
+	clear: both;
+	width: 860px;
+	padding: 10px 20px;
+	text-align: center;
+	color: #fff;
+}
+
+#template_footer a { color: #fff; }
+
+
+
+#featured{ 
+	width: 580px; 
+	padding-right:280px; 
+	position:relative; 
+	height:250px; 
+	background:#fff;
+	margin: 0 auto;
+}
+#featured ul.ui-tabs-nav{ 
+	position:absolute; 
+	top:0; left:580px; 
+	list-style:none; 
+	padding:0; margin:0; 
+	width: 280px; 
+}
+#featured ul.ui-tabs-nav li{ 
+	padding:1px 0; padding-left:13px;  
+	font-size:12px; 
+	color:#666; 
+}
+#featured ul.ui-tabs-nav li img{ 
+	float:left; margin:2px 5px; 
+	background:#fff; 
+	padding:2px; 
+	border:1px solid #eee;
+}
+#featured ul.ui-tabs-nav li span{ 
+	font-size:11px; font-family:Verdana; 
+	line-height:18px; 
+}
+#featured li.ui-tabs-nav-item a{ 
+	display:block; 
+	height:60px; 
+	color:#333;  background:#fff; 
+	line-height:20px;
+}
+#featured li.ui-tabs-nav-item a:hover{ 
+	background:#f2f2f2; 
+}
+#featured li.ui-tabs-selected{ 
+	background:url(selected-item.gif) top left no-repeat;  
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a{ 
+	background:#ccc; 
+}
+#featured .ui-tabs-panel{ 
+	width:580px; height:250px; 
+	background:#999; position:relative;
+}
+#featured .ui-tabs-panel .info{ 
+	position:absolute; 
+	top:180px; left:0; 
+	height:70px; 
+	background: url(transparent-bg.png); 
+}
+#featured .info h2{ 
+	font-size:18px; font-family:Georgia, serif; 
+	color:#fff; padding:5px; margin:0;
+	overflow:hidden; 
+}
+#featured .info p{ 
+	margin:0 5px; 
+	font-family:Verdana; font-size:11px; 
+	line-height:15px; color:#f0f0f0;
+}
+#featured .info a{ 
+	text-decoration:none; 
+	color:#fff; 
+}
+#featured .info a:hover{ 
+	text-decoration:underline; 
+}
+#featured .ui-tabs-hide{ 
+	display:none; 
+}

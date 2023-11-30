@@ -1,0 +1,110 @@
+<html>
+
+<head>
+<title>Funciones</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<link rel="stylesheet" href="./../estilos/99_estilos.css">
+</head>
+
+<body>
+
+<p><script language="JavaScript" src="valida_nt.js"></script></p>
+
+<form method="POST" action="Funciones.htm">
+  <table border="0" width="100%">
+    <tr>
+      <td align="center"><table border="1" width="70%">
+        <tr>
+          <td colspan="3" class="EEtiquetaC" bgcolor="#DDE1E3">fSoloLetras(cVCadena)</td>
+        </tr>
+        <tr>
+          <td class="ENormal" colspan="3">Valida que el campo solo contenga letras. No permite
+          ingresar números, caracteres raros, arrobas, diagonales, signos de puntuación, +, -</td>
+        </tr>
+        <tr>
+          <td class="EEtiqueta">Cadena:</td>
+          <td><input type="text" name="Cadena" size="20"></td>
+          <td><input type="button" value="Valida" name="B1"
+          onClick="alert(fSoloLetras(document.forms[0].Cadena[0].value));"></td>
+        </tr>
+        <tr>
+          <td colspan="3" bgcolor="#DDE1E3" class="EEtiquetaC">fSoloAlfanumericos(cVCadena)</td>
+        </tr>
+        <tr>
+          <td class="ENormal" colspan="3">Valida que el campo solo contenga letras y números. No
+          permite ingresar caracteres raros, arrobas, diagonales, signos de puntuación, +, -</td>
+        </tr>
+        <tr>
+          <td class="EEtiqueta">Cadena:</td>
+          <td><input type="text" name="Cadena" size="20"></td>
+          <td><input type="button" value="Valida" name="B1"
+          onClick="alert(fSoloAlfanumericos(document.forms[0].Cadena[1].value));"></td>
+        </tr>
+        <tr>
+          <td colspan="3" bgcolor="#DDE1E3" class="EEtiquetaC">fSoloNumeros(cVCadena)</td>
+        </tr>
+        <tr>
+          <td class="ENormal" colspan="3">Valida que el campo solo números. No permite ingresar
+          caracteres raros, arrobas, diagonales, signos de puntuación, +, -</td>
+        </tr>
+        <tr>
+          <td class="EEtiqueta">Cadena:</td>
+          <td><input type="text" name="Cadena" size="20"></td>
+          <td><input type="button" value="Valida" name="B1"
+          onClick="alert(fSoloNumeros(document.forms[0].Cadena[2].value));"></td>
+        </tr>
+        <tr>
+          <td colspan="3" bgcolor="#DDE1E3" class="EEtiquetaC">fDecimal(cVCadena)</td>
+        </tr>
+        <tr>
+          <td class="ENormal" colspan="3">Valida que un número sea decimal</td>
+        </tr>
+        <tr>
+          <td class="EEtiqueta">Cadena:</td>
+          <td><input type="text" name="Cadena" size="20"></td>
+          <td><input type="button" value="Valida" name="B1"
+          onClick="alert(fDecimal(document.forms[0].Cadena[3].value));"></td>
+        </tr>
+        <tr>
+          <td colspan="3" bgcolor="#DDE1E3" class="EEtiquetaC">fValRFC(cVRFC,iVTipo)</td>
+        </tr>
+        <tr>
+          <td class="ENormal" colspan="3">Valida que el dato sea un RFC.<br>
+          iVTipo : 1 Personas Físicas&nbsp;&nbsp;&nbsp; 2 Personas Morales</td>
+        </tr>
+        <tr>
+          <td class="EEtiqueta">RFC Física:</td>
+          <td><input type="text" name="Cadena" size="20"></td>
+          <td><input type="button" value="Valida" name="B1"
+          onClick="alert(fValRFC(document.forms[0].Cadena[4].value,1));"></td>
+        </tr>
+        <tr>
+          <td class="EEtiqueta">RFC Moral:</td>
+          <td><input type="text" name="Cadena" size="20"></td>
+          <td><input type="button" value="Valida" name="B1"
+          onClick="alert(fValRFC(document.forms[0].Cadena[5].value,2));"></td>
+        </tr>
+        <tr>
+          <td colspan="3" bgcolor="#DDE1E3" class="EEtiquetaC">fValFecha(cVCadena)</td>
+        </tr>
+        <tr>
+          <td class="ENormal" colspan="3">Valida que el dato sea una Fecha (dd/mm/aaaa)</td>
+        </tr>
+        <tr>
+          <td class="EEtiqueta">Cadena:</td>
+          <td><input type="text" name="Cadena" size="20"></td>
+          <td><input type="button" value="Valida" name="B1"
+          onClick="alert(fValFecha(document.forms[0].Cadena[6].value));"></td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</form>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>

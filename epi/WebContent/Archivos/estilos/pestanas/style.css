@@ -1,0 +1,130 @@
+/************************************
+            By Dan Harper
+        http://www.danharper.me
+
+           For NETTUTS.com
+
+     Check out http://vivawp.com
+************************************/
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+	font-size: 75%;
+	color: #FBFBEF;
+	background: #FBFBEF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.6em;
+}
+
+.widget {
+/*width: 610px;*/
+	margin: 10px;
+	padding: 10px;
+	background: #088A08;
+	border: 1px solid #dedbd1;
+	margin-bottom: 15px;
+	font-family: Verdana ;
+	font-size: 9pt ;
+	font-weight: Bold ;
+	text-align: left ;
+	color: #CEF6CE ;
+}
+
+/*contenido*/
+	.widget a {
+		color: #088000;
+		text-decoration: none;
+		font-family: Verdana ;
+		font-size: 9pt ;
+		font-weight: Bold ;
+		text-align: left ;
+	}
+
+/*contenido*/	
+	.widget a:hover {
+		color: #088000;
+		text-decoration: underline;
+		font-family: Verdana ;
+		font-size: 9pt ;
+		font-weight: Bold ;
+		text-align: left ;
+	}
+
+	.tabnav li {
+		display: inline;
+		list-style: none;
+		padding-right: 5px;
+		font-family: Verdana ;
+		font-size: 9pt ;
+		font-weight: Bold ;
+		text-align: left ;
+	}
+	
+	/*PESTAÑAS*/
+		.tabnav li a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #CEF6CE;
+			font-weight: bold;
+			padding: 4px 6px;
+			outline: none;
+			font-family: Verdana ;
+			font-size: 9pt ;
+			font-weight: Bold ;
+			text-align: left ;
+		}
+		
+   /*PESTAÑAS*/
+		.tabnav li a:hover, .tabnav li a:active, .tabnav li.ui-tabs-selected a { 
+			background: #FBFBEF;
+			color: #088A08;
+			text-decoration: none;
+			font-family: Verdana ;
+			font-size: 9pt ;
+			font-weight: Bold ;
+			text-align: left ;
+		}
+		
+	/*PESTAÑAS*/		
+	.tabdiv {
+			margin-top: 2px;
+			background: #FBFBEF;
+			border: 1px solid #dedbd1;
+			padding: 5px;
+			font-family: Verdana ;
+			font-size: 9pt ;
+			font-weight: Bold ;
+			text-align: left ;
+			color: #ffff ;
+	}
+	
+		.tabdiv li {
+			list-style-image: url("http://aplicaciones9.sct.gob.mx/imagenes2/medprev/img/medprev/2.png");
+			margin-left: 20px;
+		}
+
+.ui-tabs-hide {
+			display: none;
+		}
+
+		#featuredvid {
+			text-align: center;
+		}
+		
+			.fvid {
+				margin-bottom: 5px;
+			}
+		
+			.vidselector li {
+					text-align: left;
+					list-style: none;
+					padding: 5px;
+					background: #ffffff;
+					border: 1px solid #dedbd1;
+					text-transform: uppercase;
+					margin-bottom: 5px;
+			}

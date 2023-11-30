@@ -1,0 +1,3 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+{"draw":1,"recordsTotal":1,"recordsFiltered":1,"data":[[1467,"tecnoaplicada","TECNOLOGIA APLICADA TECNOLOGIA APLICADA","2018-03-07 02:57:40","2018-03-07 03:14:04","189.216.182.247","n6c5cagcr5ppoidnhkp04tpq23","\r\n        <a data-function=\"14\" id=\"comm_js_fn_04\" class=\"btn btn-outline-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill m-btn--air\">\r\n\t\t\t\t\t<i class=\"la la-power-off\"><\/i>\r\n\t\t\t\t<\/a>\r\n        "]]}

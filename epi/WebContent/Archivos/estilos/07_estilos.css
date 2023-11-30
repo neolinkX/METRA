@@ -1,0 +1,611 @@
+/*  ******************          Hoja de Estilos: 00_estilos.css          ******************  */
+/*  Estilos de uso General en aplicaciones  *
+
+/* Estilo para características generales del cuerpo de la página */
+body { 
+margin-top: 0px ;
+margin-right: 0px ;
+margin-bottom: 0px ;
+margin-left:0px
+ }
+
+/* ********** TITULOS ********** */
+
+/* Estilo para el título Grande de la página (para aplicación) */
+.ETituloG  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: center ;
+color:#ECECFB;
+ }
+
+/* Estilo para el título de la página */
+.ETitulo  {
+font-family: sans-serif ;
+font-size: 12pt ;
+font-weight: Bold ;
+text-align: left;
+color: #ECECFB ;
+ }
+
+/* Estilo para el subtítulo de la página */
+.ESTitulo  {
+font-family: sans-serif ;
+font-size: 10pt ;
+font-weight: Bold ;
+text-align: left ;
+color: #ECECFB;
+ }
+
+
+/* Estilo para los mensajes de ayuda */
+.ETablaAyuda  {
+font-family: sans-serif;
+font-size: 9pt ;
+font-weight: Bold ;
+color: #ECECFB;
+background-color: #FFFFFF; 
+}
+
+/* ********** MENSAJES DE ERROR ********** */
+
+/* Mensajes de Error mostrado con color  */
+.EResalta  {
+font-family: sans-serif ;
+font-size: 10pt ;
+font-weight: Bold ;
+color: #5F57C3;
+ }
+
+/* Mensajes de Error mostrado con color  */
+.EResaltaR  {
+font-family: sans-serif ;
+font-size: 10pt ;
+font-weight: Bold ;
+color: #5F57C3;
+text-align: right ;
+ }
+
+
+/* Mensajes de Error mostrado con color  */
+.EPositivosR  {
+font-family: sans-serif ;
+font-size: 10pt ;
+font-weight: Bold ;
+color: #B92025;
+text-align: right ;
+ }
+
+/* Mensajes de Error mostrado con color  */
+.EPositivos  {
+font-family: sans-serif ;
+font-size: 10pt ;
+font-weight: Bold ;
+color: #B92025;
+text-align: left ;
+ }
+
+/* Mensajes de Error mostrado con color  */
+.EPositivosC  {
+font-family: sans-serif ;
+font-size: 10pt ;
+font-weight: Bold ;
+color: #B92025;
+text-align: center ;
+ }
+
+
+/* Mensajes de Error mostrado con color  */
+.EDudosoR  {
+font-family: sans-serif ;
+font-size: 10pt ;
+font-weight: Bold ;
+color: #5F57C3;
+text-align: right ;
+ }
+
+
+/* ********** PRESENTACIÓN DE VALORES Y ETIQUETAS ********** */
+/* Despliegue de Datos informativos */
+.ECampo  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: Left ;
+color: #000000 ;
+ }
+
+/* ********** PRESENTACIÓN DE VALORES Y ETIQUETAS ********** */
+/* Despliegue de Datos informativos */
+.ECampo2  {
+font-family: sans-serif ;
+font-size: 7pt ;
+text-align: Left ;
+color: #000000 ;
+ }
+
+/* Despliegue de Datos informativos */
+.ECampoC  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: center ;
+color: #5F57C3 ;
+ }
+
+/* Despliegue de Datos informativos */
+.ECampoR  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: Right ;
+color: #5F57C3 ;
+ }
+
+/* Etiqueta desplegada a la izquierda de un campo, alineada a la derecha */
+.EEtiqueta  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+color: #5F57C3 ;
+text-align: Right ;
+ }
+
+/* Etiqueta desplegada a la izquierda de un campo, alienada a la izquierda */
+.EEtiquetaL  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+color: #5F57C3 ;
+text-align: Left ;
+ }
+
+/* Etiqueta desplegada a la izquierda de un campo, alineada al centro */
+.EEtiquetaC  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+color: #5F57C3 ;
+text-align: center ;
+ }
+
+/* Etiqueta pequeña desplegada a la izquierda de un campo, alineada a la derecha */
+.EEtiquetaP  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+color: #5F57C3 ;
+text-align: Right ;
+ }
+
+/* Etiqueta pequeña desplegada a la izquierda de un campo, alienada a la izquierda */
+.EEtiquetaPL  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+color: #5F57C3 ;
+text-align: Left ;
+ }
+
+/* Etiqueta pequeña desplegada a la izquierda de un campo, alineada al centro */
+.EEtiquetaPC  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+color: #5F57C3 ;
+text-align: center ;
+ }
+
+
+/* ********** TEXTO ********** */
+
+/* Estilo para textos convencionales alineado a la izquierda */
+.ENormal  {
+font-family: sans-serif ;
+font-size: 10pt ;
+color: #ECECFB;
+text-align: left ;
+ }
+
+/* Estilo para textos convencionales alineado a la derecha */
+.ENormalR  {
+font-family: sans-serif ;
+font-size: 10pt ;
+color: #ECECFB;
+text-align: Right ;
+ }
+
+/* Estilo para textos convencionales alineado al centro */
+.ENormalC  {
+font-family: sans-serif ;
+font-size: 10pt ;
+color: #ECECFB;
+text-align: center ;
+ }
+
+/* Estilo para textos de ayuda alineado a la izquierda */
+.ENormalA  {
+font-family: sans-serif ;
+font-size: 8pt ;
+color: #ECECFB;
+text-align: left ;
+ }
+
+/* Estilo para textos de ayuda alineado a la derecha */
+.ENormalAR  {
+font-family: sans-serif ;
+font-size: 8pt ;
+color: #ECECFB;
+text-align: right ;
+ }
+
+/* Estilo para textos de ayuda alineado al centro */
+.ENormalAC  {
+font-family: sans-serif ;
+font-size: 8pt ;
+color: #ECECFB;
+text-align: center ;
+ }
+
+/* Estilo para pie de pagina alineado a la izquierda */
+.EPie  {
+font-family: sans-serif ;
+font-size: 7pt ;
+font-weight: Bold ;
+color: #ECECFB;
+text-align: Left ;
+ }
+
+/* Estilo para pie de pagina alineado a la derecha */
+.EPieR  {
+font-family: sans-serif ;
+font-size: 7pt ;
+font-weight: Bold ;
+color: #ECECFB;
+text-align: Right ;
+ }
+
+/* Estilo para pie de pagina alineado al centro */
+.EPieC  {
+font-family: sans-serif ;
+font-size: 7pt ;
+font-weight: Bold ;
+color: #ECECFB;
+text-align: center ;
+ }
+
+
+/* ********** TABLAS ********** */
+
+/* Estilo para general para Tablas */
+.ETablaGral {
+border: 0px solid #cccccc ;
+padding: 1px ;
+spacing: 2px ;
+ }
+
+/* Estilo para Tablas de Informacion */
+.ETablaInfo {
+border: 2px solid #cccccc ;
+background-color: #FFFFFF ;
+ }
+
+/* Estilo para subtitulo de Tabla alineado a la izquierda*/
+.ETablaST  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: left ;
+color: #5F57C3;
+background-color: #FFFFFF;
+ }
+
+/* Estilo para subtitulo de Tabla centrado*/
+.ETablaSTC  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: center ;
+color: #5F57C3;
+background-color: #FFFFFF;
+ }
+
+/* Estilo para subtitulo de Tabla alineado a la derecha*/
+.ETablaSTR  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: right ;
+color: #5F57C3;
+background-color: #FFFFFF;
+ }
+
+
+
+/* Estilo para texto de tabla normal alineación izquierda */
+.ETabla  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: left ;
+color: #5F57C3 ;
+ }
+
+/* Estilo para texto de tabla normal alineación derecha */
+.ETablaR  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: right ;
+color: #5F57C3 ;
+ }
+
+/* Estilo para texto de tabla normal alineación al centro */
+.ETablaC  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: center ;
+color: #5F57C3 ;
+ }
+
+/* Estilo para título de tablas */
+.ETablaT  {
+background-color: #FFFFFF ;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: center ;
+color: #5F57C3 ;
+ }
+
+/* Estilo para título de tablas alineado a la izquierda */
+.ETablaTL  {
+background-color: #5F57C3 ;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: left ;
+color: #FFFFFF ;
+ }
+
+/* Estilo para título de tablas alineado a la izquierda */
+.ETablaTR  {
+background-color: #5F57C3 ;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: right ;
+color: #5F57C3 ;
+ }
+
+
+
+
+
+
+/* Estilo para Tabla Titulo de Encabezado */
+.ELogoTSist  {
+border: 0px solid #5F57C3 ;
+font-family: sans-serif ;
+font-size: 9pt ;
+font-weight: Bold ;
+text-align: left;
+color: #CCCCCC ;
+ }
+
+/* Estilo para Tabla Titulo de Encabezado */
+.ETituloTSist  {
+border: 0px ;
+font-family: sans-serif ;
+font-size: 9pt ;
+text-align: left;
+color: #5F57C3 ;
+ }
+
+/* Estilo para Tabla Titulo Botones de Encabezado */
+.ETituloTSistBtn  {
+border: 0px;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: right;
+color: #CCCCCC ;
+ }
+
+/* Estilo para el subtítulo de la página */
+.ETituloTPag  {
+border: 0px;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+color: #ECECFB ;
+ }
+
+/* Estilo para Tabla SubTitulo de Encabezado #cccccc */
+
+
+/* ********** CAMPOS DE ENTRADA ********** */
+
+/* Estilo para los campos de entrada */
+input  {
+font-family: sans-serif ;
+font-size: 8pt ;
+color: #333333 ;
+ }
+
+/* Estilo para las cuadros de texto */
+textarea  {
+font-family: sans-serif ;
+font-size: 8pt ;
+color: #333333 ;
+ }
+
+/* Estilo para las listas de selección */
+select  {
+font-family: sans-serif ;
+font-size: 8pt ;
+color: #333333 ;
+ }
+
+
+/* ********** LIGAS ********** */
+/* Estilo para todas las ligas no visitadas */
+A:Link  {
+font-family: sans-serif ;
+font-size: 9pt ;
+font-weight: Bold ;
+color: #B92025 ;
+ }
+
+/* Estilo para todas las ligas visitadas (solo IE) */
+A:Visited  {
+font-family: sans-serif ;
+font-size: 9pt ;
+font-weight: Bold ;
+color: #B92025 ;
+ }
+
+/* ********** MARQUEE ********** */
+ .MRQ{
+    COLOR:#ECECFB;
+    font-family: sans-serif ;
+    font-size: 10pt ;
+    font-weight: bold;
+    text-align: center ;
+    border: 0 ;
+ }
+
+/* ********** APTITUD ********** */
+
+.ENoAptitud  {
+font-family: sans-serif ;
+font-size: 9pt ;
+font-weight: Bold ;
+text-align: center;
+color: #B92025 ;
+/*background-color: #DC2424 ;*/
+ }
+
+.EAlarma  {
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: center;
+color: #B92025 ;
+background-color: #FFFF00 ;
+ }
+
+/* ********** REPORTES ********** */
+
+/* Despliegue de Datos informativos */
+.ERCampo  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: Left ;
+color: #000000 ;
+ }
+
+/* Despliegue de Datos informativos */
+.ERCampoC  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: center ;
+color: #000000 ;
+ }
+
+/* Despliegue de Datos informativos */
+.ERCampoR  {
+font-family: sans-serif ;
+font-size: 8pt ;
+text-align: Right ;
+color: #000000 ;
+ }
+
+/* Estilo para título de tablas */
+.ERTablaT  {
+background-color: #000000 ;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: center ;
+color: #FFFFFF ;
+ }
+
+/* Estilo para título de tablas alineado a la izquierda */
+.ERTablaTL  {
+background-color: #000000 ;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: left ;
+color: #FFFFFF ;
+ }
+
+/* Estilo para título de tablas alineado a la izquierda */
+.ERTablaTR  {
+background-color: #000000 ;
+font-family: sans-serif ;
+font-size: 8pt ;
+font-weight: Bold ;
+text-align: right ;
+color: #FFFFFF ;
+ }
+
+
+
+
+/* Etiqueta para preguntas desplegada a la izquierda de un campo, alineada a la derecha */
+.EPEtiqueta  {
+font-family: sans-serif ;
+font-size: 7pt ;
+font-weight: Bold ;
+color: #5F57C3 ;
+text-align: Right ;
+ }
+
+/* Estilo para preguntas de tabla normal alineación izquierda */
+.EPTabla  {
+font-family: sans-serif ;
+font-size: 7pt ;
+text-align: left ;
+color: #5F57C3 ;
+ }
+
+/* Estilo para preguntas de tabla normal alineación derecha */
+.EPTablaR  {
+font-family: sans-serif ;
+font-size: 7pt ;
+text-align: right ;
+color: #5F57C3 ;
+ }
+
+
+/* Estilo para Subtitulo de valores de Referencia para resultados */
+.EPTablaSTC  {
+font-family: sans-serif ;
+font-size: 5pt ;
+font-weight: Bold ;
+text-align: center ;
+color: #5F57C3;
+background-color: #BDD3D8;
+ }
+
+
+/* Estilo para Valores de Referencia */
+.EPPie  {
+font-family: sans-serif ;
+font-size: 7pt ;
+font-weight: Bold ;
+color: #ECECFB;
+text-align: Left ;
+ }
+
+ 
+ 
+
+/* Estilo para Pagina Ayuda */
+.postauthor {
+	width:700px;
+    padding: 1.5em 1.6em 0.5em;  
+    margin: 1.5em 0 1em 0; 
+	background-image: url(images/hbg.gif); 
+	border: 1px solid #D4CFC1; 
+	min-height: 100px;
+}
+ 

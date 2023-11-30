@@ -1,0 +1,39 @@
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+<dwr>
+	<!-- Define las clases que pueden ser creadas y convertidas -->
+	<!-- Si se tiene en java metodo: A.update(B), se necesita un "creator" para
+		A y un "converter" para B -->
+	<allow>
+
+		<!-- Creators: -->
+		<create creator="new" javascript="MedPredDwr">
+			<param name="class" value="gob.sct.medprev.dwr.MedPredDwr" />
+		</create>
+                		<create creator="new" javascript="AdmonUsuarios">
+			<param name="class" value="gob.sct.medprev.dwr.AdmonUsuarios" />
+		</create>
+		<!--create creator="new" javascript="CatUniAdmApp">
+			<param name="class" value="gob.sct.ingresos.app.CatUniAdmApp" />
+		</create>
+		<create creator="new" javascript="CatCentrosSCTApp">
+			<param name="class" value="gob.sct.ingresos.app.CatCentrosSCTApp" />   
+		</create>
+		<create creator="new" javascript="CatOrganismoApp">
+			<param name="class" value="gob.sct.ingresos.app.CatOrganismoApp" />
+		</create-->
+
+		<!-- Converters: -->
+		<convert converter="bean" match="gob.sct.medprev.dwr.framework.GenericResponse" />
+		<convert converter="bean" match="gob.sct.medprev.dwr.framework.PagedRequest" />
+		<convert converter="bean" match="gob.sct.medprev.dwr.vo.GrlTipoOperaBit" />
+        <convert converter="bean" match="gob.sct.medprev.dwr.vo.GrlUsuarios" />
+        <convert converter="bean" match="gob.sct.medprev.dwr.vo.GrlExpedientes" />
+        <convert converter="bean" match="gob.sct.medprev.dwr.vo.GrlUsuXExpLogin" />
+		<convert converter="bean" match="gob.sct.medprev.dwr.vo.BitacoraRetornoVo" />
+		<convert converter="bean" match="gob.sct.medprev.dwr.vo.ExpBitMod" />
+		<convert converter="bean" match="gob.sct.medprev.dwr.vo.ClaseDatosInicio" />
+        <convert converter="bean" match="gob.sct.medprev.dwr.vo.DatosAvisoVo" />
+		<convert converter="bean" match="gob.sct.medprev.dwr.vo.PermisosUsuMedVo" />
+		<!--convert converter="bean" match="gob.sct.vo.IngTipoOrganismoVO" /-->
+	</allow>
+</dwr>

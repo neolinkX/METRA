@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wls:weblogic-web-app xmlns:wls="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/920/weblogic-web-app.xsd">
+    <wls:weblogic-version>10.0</wls:weblogic-version>
+    <wls:context-root>epi</wls:context-root>
+    <wls:session-descriptor>
+	<wls:timeout-secs>6000</wls:timeout-secs>
+        <wls:cookies-enabled>true</wls:cookies-enabled>
+        <wls:cookie-max-age-secs>-1</wls:cookie-max-age-secs>        
+        <wls:cookie-http-only>false</wls:cookie-http-only>
+        <wls:http-proxy-caching-of-cookies>true</wls:http-proxy-caching-of-cookies>
+        <wls:encode-session-id-in-query-params>false</wls:encode-session-id-in-query-params>
+        <wls:sharing-enabled>true</wls:sharing-enabled>
+    </wls:session-descriptor>
+</wls:weblogic-web-app>

@@ -1,0 +1,141 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%@ page import="gob.sct.medprev.*" %>
+<%@ page import="com.micper.seguridad.vo.*" %> 
+<%@ page import="gob.sct.medprev.dao.*" %> 
+<%@ page import="com.micper.sql.*" %>
+<%@ page import="com.micper.ingsw.*"%>
+<html>
+<%
+  pg0720000CFG clsConfig = new pg0720000CFG();
+  
+  TError vErrores = new TError();
+  TEntorno    vEntorno      = new TEntorno();
+  vEntorno.setNumModulo(07);
+  vEntorno.setNombrePagina("pg0720000.jsp");                    // modificar
+  vEntorno.setArchTooltips("07_Tooltips");
+  vEntorno.setOnLoad("fOnLoad();");
+  vEntorno.setArchFuncs("FValida");
+  vEntorno.setMetodoForm("POST");
+  vEntorno.setActionForm("pg0720000.jsp\" target=\"FRMCuerpo"); // modificar
+  vEntorno.setUrlLogo("Acerca");
+  vEntorno.setBtnPrincVisible(true);
+  vEntorno.setArchFCatalogo("FFiltro");
+  vEntorno.setArchAyuda(vEntorno.getNombrePagina());
+
+  String cOperador    = "1";                   // modificar
+  String cDscOrdenar  = "|";    // modificar
+  String cCveOrdenar  = "|";  // modificar
+  String cDscFiltrar  = "|";    // modificar
+  String cCveFiltrar  = "|";  // modificar
+  String cTipoFiltrar = "|";                // modificar
+  boolean lFiltros    = false;                  // modificar
+  boolean lIra        = false;                  // modificar
+  String cEstatusIR   = "";            // modificar
+
+  // LLamado al Output Header
+  TParametro   vParametros   = new TParametro(vEntorno.getNumModuloStr());
+  int iNumRowsPrin = new Integer(vParametros.getPropEspecifica("NumRowsPrin")).intValue();
+  int iNumRowsSec  = new Integer(vParametros.getPropEspecifica("NumRowsSec")).intValue();
+
+  clsConfig.outputHeader(vErrores, pageContext, vEntorno, request);
+
+  StringBuffer sbErroresAcum = new StringBuffer();
+  TEtiCampo    vEti          = new TEtiCampo();
+
+  String cPaginas = "";
+  String cDscPaginas = "";
+  String cUpdStatus  = "SaveOnly";
+  String cNavStatus  = "Hidden";
+  String cOtroStatus = "";
+  String cCanWrite   = clsConfig.getCanWrite();
+  String cSaveAction = "Guardar";
+  String cDeleteAction = "";
+  String cClave    = "";
+  String cPosicion = "";
+  
+%>
+<SCRIPT LANGUAGE="JavaScript" SRC="<%=vParametros.getPropEspecifica("RutaFuncs")+vEntorno.getNombrePagina().substring(0,vEntorno.getNombrePagina().length()-1)%>"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+  function fOnLoad(){
+    fOnSet(window,document.forms[0].action,'<%=cCanWrite%>','<%=cUpdStatus%>','<%=cSaveAction%>','<%=cDeleteAction%>','<%=cNavStatus%>',
+          '<%=cOtroStatus%>',<%=lFiltros%>,<%=lIra%>,'<%=cDscPaginas%>','<%=cPaginas%>','<%=cOperador%>','<%=cDscFiltrar%>',
+          '<%=cCveFiltrar%>','<%=cTipoFiltrar%>','<%=cDscOrdenar%>','<%=cCveOrdenar%>','<%=cEstatusIR%>',true,'<%=vEntorno.getArchAyuda()%>');
+  }
+  function cuenta(){
+	  document.forms[0].caracteres.value=document.forms[0].cNvaContrasenia.value.length
+	  if(document.forms[0].cNvaContrasenia.value.length > 15){
+		  	document.forms[0].cNvaContrasenia.value = document.forms[0].cNvaContrasenia.value.substring(0,15);
+	  		alert("No puede ingresar mas de 15 caracters para su contraseña");
+   }
+  }
+</SCRIPT>
+<% new TCabeceras(pageContext).TCabecerasCat(vEntorno, vParametros); /* Agrega características generales de las páginas: (estilos, funciones, Barra Estado, Ayuda, Tooltips, etc) */	%>
+<link rel="stylesheet" href="<%= vParametros.getPropEspecifica("RutaCSS") + vParametros.getPropEspecifica("HojaCSS") %>" TYPE="text/css">
+<body bgcolor="<%= vParametros.getPropEspecifica("ColorFondoPagina") %>" topmargin="0" leftmargin="0" onLoad="<%= vEntorno.getOnLoad() %>">
+<form method="<%= vEntorno.getMetodoForm() %>" action="<%= vEntorno.getActionForm() %>">
+  <table background="<%= vParametros.getPropEspecifica("RutaImg") %>fondo01.jpg" width="100%" height="100%">
+  <% if(clsConfig.getAccesoValido()){ %>
+  <tr><td>&nbsp;</td></tr>
+  <tr><td><input type="hidden" name="hdBoton" value=""><input type="hidden" name="hdLCondicion" value=""><input type="hidden" name="hdLOrdenar" value="">
+      </td>
+      <td valign="top">
+                          <table border="1" class="ETablaInfo" align="center" cellspacing="0" cellpadding="3"><% // Inicio de Datos %>
+                            <tr>
+                              <td colspan="2" class="ETablaT">Cambio de Contraseña
+                              </td>
+                            </tr>
+                             <%
+                               try{
+                                 TVUsuario vUsuario = (TVUsuario) request.getSession(true).getAttribute("UsrID");
+                                 if(vUsuario != null){
+                                    out.print("<tr>");
+                                    out.print(vEti.Texto("EEtiquetaL", "Clave:"));
+                                    out.print(vEti.Texto("ECampo", ""+vUsuario.getICveusuario()));
+                                    out.print("<input type=\"hidden\" name=\"hdUsuario\" value=\""+vUsuario.getCUsuario()+"\">");
+                                    out.print("<input type=\"hidden\" name=\"hdPwd\" value=\""+vUsuario.getCPassword()+"\">");
+                                    out.print("</tr>");
+                                    out.print("<tr>");
+                                    out.print(vEti.Texto("EEtiquetaL", "Usuario:"));
+                                    out.print(vEti.Texto("ECampo", vUsuario.getCUsuario()));
+                                    out.print("</tr>");
+                                    out.print("<tr>");
+                                    out.print(vEti.Texto("EEtiquetaL", "Nombre:"));
+                                    out.print(vEti.Texto("ECampo", vUsuario.getCNombre()+" "+vUsuario.getCApPaterno()+" "+vUsuario.getCApMaterno()));
+                                    out.print("</tr>");
+                                    if(cCanWrite.equals("yes")){
+                                      out.print("<tr>");
+                                      out.print(vEti.EtiCampo("EEtiqueta","Contraseña:","ECampo","password", 15, 15, "cContrasenia", "", 0, "", "", true, true, true));
+                                      out.print("</tr>");
+                                      
+                                      out.print("<tr>");
+                                      //out.print(vEti.EtiCampo("EEtiqueta","Nueva Contraseña:","ECampo","password", 12, 10, "cNvaContrasenia", "", 0, "", "", true, true, true));
+                                      out.print(" <td class=\"EEtiqueta\">Nueva Contraseña:</td><td class=\"ECampo\"> ");
+                                      out.print(" <input type=\"password\" size=\"16\" maxlength=\"16\" name=\"cNvaContrasenia\" ");
+									  out.print(" value=\"\" onfocus=\"this.select();\" ");
+									  out.print(" onMouseOut=\"if (window.fOutField) window.fOutField();\"");
+									  out.print(" onMouseOver=\"if (window.fOverField) window.fOverField(0);\"");
+									  out.print(" onKeyDown=\"cuenta()\" onKeyUp=\"cuenta()\" ></td>");
+                                      out.print("<input type=\"hidden\" size=\"16\" maxlength=\"16\" name=\"caracteres\" value=\"\">");
+                                      out.print("</tr>");
+                                      out.print("<tr>");
+                                      out.print(vEti.EtiCampo("EEtiqueta","Reescriba Nueva Contraseña:","ECampo","password", 16, 16, "cReNvaContrasenia", "", 0, "", "", true, true, true));
+                                      out.print("</tr>");
+                                    }
+                                 }else{
+                                 %>
+                                    <script language="JavaScript">fSalir(document.forms[0], window, '<%=vEntorno.getNumModuloStr()%>');</script>
+                                 <%}
+                               }catch(Exception e){}
+                            %>
+                          </table>
+  </td></tr>
+  <%}else{%>
+      <script language="JavaScript">fSalir(document.forms[0], window, '<%=vEntorno.getNumModuloStr()%>');</script>
+  <%}%>
+ </table>
+</form>
+</body>
+<%=vErrores.muestraError()%>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wls:weblogic-web-app xmlns:wls="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/920/weblogic-web-app.xsd">
+    <wls:weblogic-version>10.0</wls:weblogic-version>
+    <wls:context-root>epi</wls:context-root>
+    <wls:session-descriptor>
+        <wls:timeout-secs>6000</wls:timeout-secs>
+        <wls:invalidation-interval-secs>60000</wls:invalidation-interval-secs>
+        <wls:cookies-enabled>false</wls:cookies-enabled>
+    </wls:session-descriptor>
+    <wls:jsp-descriptor>
+        <wls:precompile>false</wls:precompile>
+        <wls:encoding>UTF-8</wls:encoding>
+    </wls:jsp-descriptor>
+    <wls:container-descriptor>
+        <wls:prefer-web-inf-classes>true</wls:prefer-web-inf-classes>
+    </wls:container-descriptor>
+</wls:weblogic-web-app>

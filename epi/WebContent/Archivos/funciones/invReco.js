@@ -1,0 +1,10 @@
+var aINVRecID = new Array(); 
+aINVRecID[0]=['1','RECOMENDACIÓN 1','REC1']; 
+aINVRecID[1]=['2','RECOMENDACIÓN 2','REC2']; 
+aINVRecID[2]=['3','RECOMENDACIÓN 3','REC3']; 
+aINVRecID[3]=['4','RECOMENDACIÓN 4','REC4']; 
+var aINVRecDsc = new Array(); 
+aINVRecDsc[0]=['1','RECOMENDACIÓN 1','REC1']; 
+aINVRecDsc[1]=['2','RECOMENDACIÓN 2','REC2']; 
+aINVRecDsc[2]=['3','RECOMENDACIÓN 3','REC3']; 
+aINVRecDsc[3]=['4','RECOMENDACIÓN 4','REC4']; 

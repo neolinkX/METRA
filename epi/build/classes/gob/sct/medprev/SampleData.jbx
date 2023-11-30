@@ -1,0 +1,21 @@
+[PropertyInfo]
+CA_Componente,ArrayList,false,false, , ,true,<default>
+CA_dIon02,ArrayList,false,false, , ,true,<default>
+CA_dIon03,ArrayList,false,false, , ,true,<default>
+CA_dIon05,ArrayList,false,false, , ,true,<default>
+CA_dResultadoDil,ArrayList,false,false, , ,true,<default>
+CA_dTmpRetenc,ArrayList,false,false, , ,true,<default>
+CA_dTmpRetencD,ArrayList,false,false, , ,true,<default>
+componentes,String,false,false, , ,true,<default>
+Componentes,String,false,false, , ,false,<default>
+fileName,String,false,false, , ,true,<default>
+LC_dtAnalisis,Calendar,false,false, , ,true,<default>
+LC_dtAnalisisD,java.sql.Date,false,false, , ,true,<default>
+LC_iCveAnalisis,String,false,false, , ,true,<default>
+originalContent,String,false,false, , ,true,<default>
+LC_SampleName,String,false,false,LC_SampleName,LC_SampleName,true,<default>
+[IconNames]
+
+
+
+

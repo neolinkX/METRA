@@ -1,0 +1,12 @@
+[PropertyInfo]
+accion,String,false,false, , ,true,<default>
+activeX,String,false,false, , ,true,<default>
+cActual2,String,false,false, , ,false,<default>
+CClave,String,false,false, , ,true,<default>
+cveReactivo,int,false,false, , ,false,<default>
+inputs,Object,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

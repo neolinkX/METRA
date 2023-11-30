@@ -1,0 +1,29 @@
+  function fValidaTodo(){
+    var form = document.forms[0];
+  cVMsg = '';
+    if(form.hdBoton.value == 'Imprimir')
+      fImprimir()
+/*    if (form.hdBoton.value != 'Cancelar') {
+      if (form.cGpoSang)
+        cVMsg = cVMsg + fSinValor(form.cGpoSang,1,'Gpo. Sanguineo:', true);
+
+        if (cVMsg != ''){
+          alert("Datos no Válidos: \n" + cVMsg);
+          return false;
+        }
+    } */
+    if (form.hdBoton.value == 'Guardar') {
+      if(!confirm("¿Está Seguro de Dictaminar el registro?"))
+        return false;
+    }
+
+    return true;
+  }
+
+function Genera_Doc(){
+   form = document.forms[0];
+   //form.target="_self";
+   form.target="_blank";
+   form.hdBoton.value = 'Imprime Documentacion';
+   form.submit();
+}

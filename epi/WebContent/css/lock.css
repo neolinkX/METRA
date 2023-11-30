@@ -1,0 +1,77 @@
+h1 {
+    font-size: 2rem;
+}
+.h4, h4 {
+    font-size: 1.2rem;
+}
+.h1-responsive {
+    font-size: 170%;
+}
+.relogin a{
+  color:#FFF;
+  font-size:1.2em;
+}
+.flex-center {
+    color: #fff;
+}
+::-webkit-input-placeholder {
+  color: red;
+}
+:-ms-input-placeholder {
+  color: red;
+}
+::-moz-placeholder {
+  color: red;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: red;
+  opacity: 1;
+}
+.carousel-caption {
+    height: 100%;
+    padding-top: 7rem;
+    position:absolute;
+}
+body {
+  margin:0px;
+  padding:0px;
+}
+.videoContainer
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+.videoContainer video
+{
+    min-width: 100%;
+    min-height: 100%;
+}
+.card-wrapper .avatar {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 30px auto 0px;
+    overflow: hidden;
+}
+.carousel-caption {
+  color: #FFF;
+}
+.card-wrapper .face
+{
+  background-color: rgba(255, 255, 255, 0)!important; */
+}
+.card-wrapper .front{
+  box-shadow: none;
+}
+.card-wrapper .avatar img {
+    border: 5px solid #fff;
+    background: #FFF;
+    width: 200% !important;
+    position: relative !important;
+    left: -50% !important;
+    top: -10% !important;
+}

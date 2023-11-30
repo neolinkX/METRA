@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="oracle.eclipse.tools.weblogic.lib.system">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/_wl_cls_gen.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/avalon-framework-4.1.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/axis.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/barcode4j.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/barcode4j-light.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmb81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbadm81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbcm81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbdb2c81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbdb281.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbdj81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbdjc81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbfed81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbfedc81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbicm81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbicmc81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbicmcup.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbjdbc81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbjdbcc81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmblog4j81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbsdk81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbservlets81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbtag81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbupes81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbutil81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbutilfed81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbutilicm81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbutiljdbc81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbview81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbwas81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cmbwcm81.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-beanutils.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-beanutils-1.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-beanutils-bean-collections.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-beanutils-core.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-collections-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-collections-3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-digester-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-discovery-0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-fileupload-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-io-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-javaflow-20060411.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-jexl-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-logging-1.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-logging-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-logging-adapters-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-logging-api-1.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/commons-logging-api-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/cos.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/dwr.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/itext-1.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/jasperreports-1.2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/jasperreports-2.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/jasperreports-2.0.2-applet.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/jasperreports-2.0.2-javaflow.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/javacsv.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/javax.servlet.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/jxl.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/jxls.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/log4j.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/mail-1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/poi-2.5.1-final-20040804.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/poi-contrib-2.5.1-final-20040804.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/poi-scratchpad-2.5.1-final-20040804.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/TDConAreaRec_client.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/TDConTarifaConcepto_client.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/TDConUsrIng_client.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/TDGenMovimiento_client.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/TEncripta.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/webserviceclient.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/wsdl4j.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/WSInsertaCita_client.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/xercesImpl.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/SCT/Proyectos/workspace/epi/WebContent/WEB-INF/lib/weblogic.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Oracle WebLogic Server 11gR1 (10.3.3) JDK">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
